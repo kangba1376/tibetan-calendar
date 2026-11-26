@@ -220,10 +220,19 @@ setTodayLine();
 </script>
 <script>
 (function(){
-  function report(){ try{ parent.postMessage({khamCalendarHeight: document.documentElement.scrollHeight}, "*"); }catch(e){} }
+  var last = 0;
+  function report(){
+    try{
+      var card = document.querySelector(".card");
+      if(!card) return;
+      var h = Math.ceil(card.getBoundingClientRect().bottom + 10);
+      if(Math.abs(h - last) > 1){ last = h; parent.postMessage({khamCalendarHeight: h}, "*"); }
+    }catch(e){}
+  }
   window.addEventListener("load", report);
   window.addEventListener("resize", report);
-  setInterval(report, 1200);
+  setTimeout(report, 200);
+  setTimeout(report, 900);
 })();
 </script></body>
 </html>
