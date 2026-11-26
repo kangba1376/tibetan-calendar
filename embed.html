@@ -30,14 +30,14 @@ body{
     repeating-linear-gradient(45deg, rgba(201,154,46,.045) 0 8px, transparent 8px 16px),
     var(--bg);
   min-height:100vh;
-  padding:28px 16px 56px;
+  padding:24px 16px 44px;
 }
 .wrap{max-width:860px;margin:0 auto}
-header{text-align:center;margin-bottom:22px}
+header{text-align:center;margin-bottom:18px}
 h1{
   font-family:'WujinLabuleng','Microsoft Himalaya',serif;
-  font-size:clamp(26px,5vw,40px);margin:0 0 8px;letter-spacing:1px;
-  color:var(--red);font-weight:400;line-height:1.8;
+  font-size:clamp(22px,4vw,32px);margin:0 0 6px;letter-spacing:1px;
+  color:var(--red);font-weight:400;line-height:1.9;
 }
 .sub{color:var(--sub);font-size:14px;line-height:1.8}
 .badge-row{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:12px}
@@ -83,32 +83,46 @@ h1{
 .year-line b{font-size:18px;color:var(--ink)}
 .year-line .tibr{font-family:'WujinLabuleng','Microsoft Himalaya',serif;font-size:16px;line-height:1.8}
 .tib-name{
-  text-align:center;margin:10px 0 4px;line-height:1.7;
+  text-align:center;margin:8px 0 6px;line-height:1.85;
   font-family:'WujinLabuleng','Microsoft Himalaya',serif;
-  font-size:clamp(40px,10vw,64px);color:var(--red);
+  font-size:clamp(34px,7.5vw,50px);color:var(--red);
 }
 .tib-sub{
   text-align:center;font-family:'WujinLabuleng','Microsoft Himalaya',serif;
-  font-size:26px;line-height:1.7;color:#8a7050;margin-bottom:14px;min-height:44px;
+  font-size:21px;line-height:1.85;color:#8a7050;margin-bottom:12px;min-height:40px;
 }
-.chips{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:14px 0 6px}
+.chips{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:12px 0 6px}
 .chip{
   background:#fbf3df;border:1px solid #ecd9ac;border-radius:12px;
-  padding:8px 16px;color:#6b532a;text-align:center;min-width:88px;
+  padding:7px 14px;color:#6b532a;text-align:center;min-width:80px;
 }
-.chip .cv{font-family:'WujinLabuleng','Microsoft Himalaya',serif;font-size:22px;line-height:1.8}
-.chip .cl{font-family:'WujinLabuleng','Microsoft Himalaya',serif;font-size:11px;color:#a08a63;margin-top:2px;line-height:1.6}
-.today-line{margin-top:18px;text-align:center;font-family:'WujinLabuleng','Microsoft Himalaya',serif;font-size:15px;line-height:1.9;color:#8c1c13}
+.chip .cv{font-family:'WujinLabuleng','Microsoft Himalaya',serif;font-size:18px;line-height:1.85}
+.chip .cl{font-family:'WujinLabuleng','Microsoft Himalaya',serif;font-size:10.5px;color:#a08a63;margin-top:2px;line-height:1.7}
+.today-line{margin-top:16px;text-align:center;font-family:'WujinLabuleng','Microsoft Himalaya',serif;font-size:13px;line-height:2;color:#8c1c13}
 .foot{margin-top:26px;text-align:center;color:#9a866f;font-size:12px;line-height:1.8}
 .foot .tibw{font-family:'WujinLabuleng','Microsoft Himalaya',serif;font-size:12px}
 .foot .copyright{margin-top:8px;color:#c4b6a4;font-size:6px;letter-spacing:.4px}
 .foot .copyright .tibw{font-size:8px}
 @media (max-width:560px){
-  .tib-name{font-size:44px}
-  .card{padding:16px;border-radius:16px}
-  .search{gap:8px}
-  .btn{flex:1 1 auto}
-  .chip{min-width:76px;padding:8px 10px}
+  body{padding:16px 12px 32px}
+  header{margin-bottom:14px}
+  h1{font-size:clamp(19px,5.2vw,24px);line-height:1.9}
+  .tib-name{font-size:32px;margin:6px 0 4px;line-height:1.8}
+  .tib-sub{font-size:17px;line-height:1.8;min-height:32px;margin-bottom:10px}
+  .card{padding:14px;border-radius:16px}
+  .result{margin-top:16px}
+  .search{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .year-box{grid-column:1 / -1}
+  .btn{width:100%;font-size:13px}
+  .btn.ghost{font-size:12.5px}
+  .chip{min-width:70px;padding:6px 10px}
+  .chip .cv{font-size:16px}
+  .chip .cl{font-size:9.5px}
+  .today-line{font-size:11px;margin-top:14px;line-height:2.05;padding:0 2px}
+  .foot{font-size:10px;margin-top:20px}
+  .foot .tibw{font-size:10px}
+  .foot .copyright{font-size:5.5px}
+  .foot .copyright .tibw{font-size:7px}
 }
 body.embed{background:transparent;padding:4px}
 body.embed header,body.embed .foot{display:none}
