@@ -180,7 +180,7 @@ function setTodayLine(){
   const t = ZANGLI[key];
   if(!t) return;
   el.textContent = 'དེ་རིང་ནི་སྤྱི་ལོ་ ' + toTibNum(y) + ' ལོའི་ཟླ་ ' + toTibNum(m) + ' ཚེས་ ' + toTibNum(d)
-    + ' དང་།  བོད་ལོ་ ' + toTibNum(t[0]) + ' ལོའི་ཟླ་ ' + toTibNum(t[1]) + ' ཚེས་ ' + toTibNum(t[2]) + ' ' + WEEKDAYS[now.getDay()] + 'ཡིན།';
+    + ' དང་།  བོད་ལོ་ ' + toTibNum(t[0]) + ' ལོའི་ཟླ་ ' + toTibNum(t[1]) + ' ཚེས་ ' + toTibNum(t[2]) + ' ' + WEEKDAYS[now.getDay()] + '་ཡིན།';
 }
 function fitTodayLine(){
   const el = document.getElementById('todayLine');
